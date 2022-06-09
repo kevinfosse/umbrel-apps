@@ -1,0 +1,34 @@
+manifestVersion: 1
+id: jellyfin
+category: Entertainment
+name: Jellyfin
+version: "1.2.23"
+tagline: Watch Movies and Series 
+description: >-
+  SimpleTorrent is a a self-hosted remote torrent client that starts
+  torrents remotely, download sets of files on your Umbrel, which are then
+  retrievable or streamable via web browser over HTTP. This project is a
+  re-branded fork of cloud-torrent by jpillora. Features:
+  - Individual file download control
+  - Run external program on tasks completion: DoneCmd
+  - Stops task when seeding ratio reached: SeedRatio
+  - Download/Upload speed limiter: UploadRate/DownloadRate
+  - Detailed transfer stats in web UI.
+  - Torrent Watcher
+  - Extra trackers from external source
+  - Protocol Handler to magnet:
+  - Magnet RSS subscribing supported
+developer: Preston
+website: https://github.com/boypt
+dependencies: []
+repo: https://github.com/jellyfin/jellyfin
+support: https://github.com/jellyfin/jellyfin/issues
+port: 8096
+gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+torOnly: false

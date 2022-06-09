@@ -1,0 +1,3 @@
+
+export APP_JELLYFIN_IP="10.21.21.41"
+export APP_JELLYFIN_PORT="8096"

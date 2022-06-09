@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: $APP_JELLYFIN_IP
+      APP_PORT: $APP_JELLYFIN_PORT
+
+  jellyfin:
+    image: jellyfin/jellyfin
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+     - ${APP_DATA_DIR}/data/jellyfin/config:/config
+     - ${APP_DATA_DIR}/data/jellyfin/cache:/cache
+     - ${APP_DATA_DIR}/data/jellyfin/media:/media
+    networks:
+      default:
+        ipv4_address: $APP_JELLYFIN_IP
